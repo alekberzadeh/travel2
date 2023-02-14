@@ -1,0 +1,93 @@
+.blogs {
+    .box-container {
+        @include grid(32rem);
+
+        .box {
+            border-radius: 1rem;
+            overflow: hidden;
+            background: $bg-color;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+
+            .image {
+                height: 25rem;
+                overflow: hidden;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content {
+                padding: 2rem;
+
+                .link {
+                    font-size: 2rem;
+                    color: $white;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+                p {
+                    padding: 1rem 0;
+                    font-size: 1.4rem;
+                    color: $light-color;
+                    line-height: 2;
+                }
+
+                .icon {
+                    padding-top: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        font-size: 1.4rem;
+                        color: $light-color;
+
+                        &:hover {
+                            color: $blue;
+                        }
+
+                        i {
+                            padding-right: 0.5rem;
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    background: linear-gradient($black-bg, $black-bg), url(/images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+
+    .content{
+        span{
+            color: $blue;
+            font-size: 2rem;
+        }
+        h3{
+            color: $white;
+            font-size: 4rem;
+            margin-top: 1rem;
+        }
+        p {
+            max-width: 60rem;
+            margin: 1rem auto;
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+        }
+    }
+}

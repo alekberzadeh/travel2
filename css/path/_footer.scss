@@ -1,0 +1,96 @@
+.footer{
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            padding: 1rem 0;
+
+            .logo{
+                padding-bottom: 1rem;
+            }
+
+            h3{
+                font-size: 2.2rem;
+                color: $white;
+                padding: 1rem 0;
+            }
+            p{
+                padding: 1rem 0;
+                font-size: 1.4rem;
+                color: $light-color;
+                line-height: 2;
+
+                i{
+                    padding-right: 0.5rem;
+                    color: $blue;
+                }
+            }
+
+            .share{
+                padding-top: 1rem;
+
+                a{
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4rem;
+                    font-size: 1.7rem;
+                    border-radius: 50%;
+                    border: $border;
+                    color: $blue;
+                    text-align: center;
+                    margin-right: 0.5rem;
+
+                    &:hover{
+                        color: $black;
+                        background: $blue;
+                    }
+                }
+            }
+            .links{
+                font-size: 1.4rem;
+                color: $light-color;
+                padding: 1rem 0;
+                display: block;
+                width: max-content;
+
+                &:hover{
+                    color: $blue;
+
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+
+                i{
+                    padding-right: 0.5rem;
+                    color: $blue;
+                }
+            }
+
+            form{
+                .email{
+                    width: 100%;
+                    border-radius: 5rem;
+                    border: $border;
+                    background: none;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    text-transform: none;
+                    color: $light-color;
+                    padding: 1.2rem 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+.credit{
+    font-size: 2rem;
+    text-align: center;
+    color: $light-color;
+    background: $bg-color;
+    padding: 2rem 1rem;
+    span{
+        color: $blue;
+    }
+}
